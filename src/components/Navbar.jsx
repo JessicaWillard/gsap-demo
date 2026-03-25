@@ -2,14 +2,17 @@ import { useRef } from "react";
 import { navLinks } from "../../consants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   const navRef = useRef(null);
 
   useGSAP(() => {
     const nav = navRef.current;
-    const main = document.querySelector("main");
-    if (!nav || !main) return;
+    const hero = document.querySelector("#hero");
+    if (!nav || !hero) return;
 
     gsap.fromTo(
       nav,
@@ -20,16 +23,19 @@ const Navbar = () => {
       {
         backgroundColor: "rgba(0, 0, 0, 0.31)",
         backdropFilter: "blur(10px)",
-        ease: "power1.inOut",
+        ease: "none",
+        immediateRender: false,
         scrollTrigger: {
-          trigger: nav,
-          scroller: main,
+          trigger: hero,
           start: "top top",
           end: "+=80",
           scrub: true,
+          invalidateOnRefresh: true,
         },
       },
     );
+
+    requestAnimationFrame(() => ScrollTrigger.refresh());
   });
 
   return (
