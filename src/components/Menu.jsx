@@ -62,7 +62,7 @@ const Menu = () => {
         scrollTrigger: {
           trigger: "#menu",
           start: "top center",
-          end: "bottom 30%",
+          end: "+=200px",
           scrub: true,
         },
       })
@@ -81,6 +81,28 @@ const Menu = () => {
           scale: 1.2,
         },
         0,
+      );
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#menu",
+          start: "top 80%",
+          end: "+=200px",
+          scrub: true,
+        },
+      })
+      .fromTo(
+        ".cocktail img",
+        {
+          opacity: 0,
+          xPercent: -100,
+        },
+        {
+          opacity: 1,
+          xPercent: 0,
+          duration: 1,
+          ease: "power1.inOut",
+        },
       );
   }, [currentIndex]);
   return (
