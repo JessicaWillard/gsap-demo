@@ -62,14 +62,14 @@ const Menu = () => {
         scrollTrigger: {
           trigger: "#menu",
           start: "top center",
-          end: "bottom bottom",
+          end: "bottom 30%",
           scrub: true,
         },
       })
       .to(
         "#m-right-leaf",
         {
-          y: -200,
+          y: 200,
           scale: 1.2,
         },
         0,
@@ -77,7 +77,7 @@ const Menu = () => {
       .to(
         "#m-left-leaf",
         {
-          y: 200,
+          y: -200,
           scale: 1.2,
         },
         0,
