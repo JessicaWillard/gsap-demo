@@ -56,7 +56,7 @@ const Hero = () => {
       );
 
     const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? "bottom 2.5%" : "bottom 8%";
+    const endValue = isMobile ? "bottom 2.5%" : "bottom 15%";
 
     //video animation timeline
     const tl = gsap.timeline({
@@ -78,7 +78,7 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title">MOJITO</h1>
+        <h1 className="title">SPIRIT</h1>
         <img
           className="left-leaf"
           src="/images/hero-left-leaf.png"

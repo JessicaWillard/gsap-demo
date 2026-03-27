@@ -291,7 +291,11 @@ body {
       @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
 
       button {
-        @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
+        @apply md:text-3xl text-xl pb-2 cursor-pointer text-white/50 border-b-white/50 hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
+      }
+
+      .active {
+        @apply text-white border-white;
       }
     }
 
@@ -320,13 +324,13 @@ body {
     }
 
     .recipe {
-      @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
+      @apply flex max-md:flex-col gap-10 md:items-end justify-between w-full lg:absolute bottom-0;
 
       .info {
-        @apply space-y-4 lg:translate-y-20;
+        @apply space-y-4;
 
         #title {
-          @apply font-modern-negra md:text-6xl text-3xl text-yellow max-w-40;
+          @apply font-modern-negra md:text-6xl  text-3xl text-yellow max-w-40 lg:max-w-md;
         }
       }
 

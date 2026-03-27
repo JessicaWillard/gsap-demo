@@ -12,6 +12,10 @@ const navLinks = [
     title: "The Art",
   },
   {
+    id: "menu",
+    title: "Menu",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -137,35 +141,35 @@ const socials = [
 const sliderLists = [
   {
     id: 1,
-    name: "Classic Mojito",
+    name: "Fruitini",
     image: "/images/drink1.png",
-    title: "Simple Ingredients, Bold Flavor",
+    title: "A Garden of Fresh Flavors",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "A vibrant blend of premium vodka and elderflower, overflowing with a hand-picked selection of seasonal fruits. It’s a crisp, botanical escape in a glass.",
   },
   {
     id: 2,
-    name: "Raspberry Mojito",
+    name: "Black Russian",
     image: "/images/drink2.png",
-    title: "A Zesty Classic That Never Fails",
+    title: "Bold, Dark, and Effortlessly Smooth",
     description:
-      "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+      "A timeless duo of vodka and rich coffee liqueur served over ice. Intense and velvety, this classic cocktail is the perfect sophisticated pick-me-up.",
   },
   {
     id: 3,
-    name: "Violet Breeze",
+    name: "Garden Gimlet",
     image: "/images/drink3.png",
-    title: "Simple Ingredients, Bold Flavor",
+    title: "Nature’s Finest in Every Sip",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "A botanical twist on the classic gimlet, featuring gin, muddled kiwi, and crisp apple. It’s a refreshing, fruit-forward harmony of sweet and tart.",
   },
   {
     id: 4,
-    name: "Curacao Mojito",
+    name: "Aperol Spritz",
     image: "/images/drink4.png",
-    title: "Crafted With Care, Poured With Love",
+    title: "The Golden Hour Essential",
     description:
-      "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+      "The ultimate Italian aperitivo. Bittersweet Aperol meets effervescent Prosecco and a splash of soda for a bright, bubbly, and citrus-filled summer classic.",
   },
 ];
 

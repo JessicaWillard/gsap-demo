@@ -37,7 +37,7 @@ const Cocktails = () => {
       },
       0,
     );
-    tl.from("li", {
+    tl.from("#cocktails li", {
       opacity: 0,
       y: 100,
       duration: 1,
